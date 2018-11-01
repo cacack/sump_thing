@@ -1,11 +1,17 @@
 # sump-thing
 
-## Components
+## Parts
 
-* NodeMCU (ESP8266): http://a.co/d/fYVz4CV
-* BME280, temperature sensor: http://a.co/d/dGsapW6
-* SSD1306, 0.96" i2C OLED: http://a.co/d/9HEjrm8
-* Light sensitive resitor: http://a.co/d/9iC4TZW 
+* 1x NodeMCU (ESP8266): http://a.co/d/fYVz4CV
+* 1x BME280, temperature sensor: http://a.co/d/dGsapW6
+* 1x SSD1306, 0.96" i2C OLED: http://a.co/d/9HEjrm8
+* 1x Light sensitive resitor: http://a.co/d/9iC4TZW 
+* 3x 10k resistors
+
+
+## Wiring
+
+![fritzing](sump_thing.png)
 
 
 ## Installing micropython on NodeMCU
@@ -31,10 +37,16 @@ pipenv install
 ```
 
 
-## Installing scripts
+## Configuration
+
+Copy `config.json.dist` to `config.json` and then edit it.
+
+
+## Upload scripts to NodeMCU
 
 I use `ampy` to *upload* the scripts to the ESP8266 which is all in the
 `upload.sh` script.
+
 
 ## Testing
 
