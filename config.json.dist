@@ -1,0 +1,7 @@
+{
+  "broker": "192.168.16.20",
+  "ssid": "TheForce",
+  "password": "Sprite cans are green.",
+  "room": "basement",
+  "base": "/house"
+}
